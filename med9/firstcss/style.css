@@ -1,0 +1,27 @@
+h1 {
+	background-color: lightpink;
+	text-decoration: underline;
+	font-size: 55px;
+
+}
+
+body{
+	background-color: lightblue;
+}
+
+
+p {
+	font-size: 40px;
+	border: 8px dotted black;
+}
+
+ul {
+
+	background-color: white;
+	color:black;
+
+}
+ol {
+	background-color: black;
+	color: white;
+}

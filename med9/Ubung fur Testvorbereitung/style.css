@@ -1,0 +1,57 @@
+body{
+	background-color: darkblue
+}
+
+
+h1{
+padding: 70px;
+text-align: center;
+font-size: 60px;
+color: purple;
+background-color: lightpink;
+margin-top: 100px
+}
+h2{
+margin:70px;
+padding: 25px;
+text-align: center;
+font-size: 35px;
+color: white;
+}	
+
+div{
+margin:35px;
+padding: 50px;
+text-align: left;
+font-size: 30px;
+color: red;
+background-color: yellow;
+border: 40px solid orange;
+}
+
+ul {
+	background-color: lightblue;
+	border: 20px dashed blue;
+	margin: 60px;
+}
+
+li{
+	background-color: blue;
+	color: white;
+	text-align: left;
+	padding:5px;
+	margin:50px;
+	font-size: 40px;
+}
+
+p {
+	background-color: lightgreen;
+	border: 40px dotted green;
+	padding: 50px;
+	border-radius: 20px;
+	margin: 60px;
+	font-size: 100px;
+	color: white;
+
+
+}

@@ -1,0 +1,23 @@
+h1 {
+	font-size: 50px;
+	background-color: lightblue;
+}
+
+
+div {
+	height: 100px;
+	width: 400px;
+}
+
+.blue {
+	background-color: blue;
+}
+
+
+.red {
+	background-color: red;
+}
+ img {
+ 	width: 500px;
+ 	border: 10px double darkblue;
+ }
