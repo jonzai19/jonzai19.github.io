@@ -1,0 +1,24 @@
+h1 {
+	background-color: lightblue;
+	display: inline;
+	padding: 50px;
+}
+
+p {
+	margin: 100px;
+}
+
+.blue{
+	background-color: blue;
+}
+
+.green {
+	background-color: green;
+}
+
+.bold {
+	font-weight: bold;
+	font-size: 60px;
+	font-family: "PT Serif"
+}
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap')
