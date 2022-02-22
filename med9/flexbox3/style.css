@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gideon+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Bebas+Neue&family=Gideon+Roman&display=swap');
+
+body {
+	margin: 0;
+}
+
+header {
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("electronics1.jpg");
+	background-size: cover;
+	background-position: center;
+
+}
+
+header h1{
+	padding: 30px;
+	background-color: rgb(255, 255, 255, 0.6);
+	border-radius: 20px;
+
+}
+
+main {
+	padding: 100px;
+	background: linear-gradient(90deg, rgba(14,46,111,1) 0%, rgba(193,255,0,1) 100%);
+
+}
+
+main p{
+	column-count: 2;
+	color: white;
+	font-family: "Akaya Telivigala";
+}
+
+
+#schaltung {
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: lightskyblue;
+
+}
+
+#schaltung ul li {
+	padding: 30px;
+	margin:  30px;
+	background-color: lightseagreen;
+	font-family: "Gideon Roman";
+
+
+}
+
+footer {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 400px;
+	background-image: url("electronics2.jpg");
+	background-size: cover;
+	background-position: center;
+	font-family: "Bebas Neue";
+
+
+}
+
+footer p{
+	padding: 30px;
+	background-color: rgb(255, 255, 255, 0.6);
+	border-radius: 20px;
+}
+
