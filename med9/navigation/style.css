@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+body {
+	margin: 0px;
+}
+
+
+nav {
+	background-image: url(mountains.jpg);
+	background-position: center;
+	background-size: cover;
+	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	padding: 30px;
+
+}
+ nav img {
+ 	height: 330px;
+ 	width: 200px;
+ 	border-radius: 30px;
+ 
+ }
+
+
+ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style-type: none;
+}
+
+
+ul li a {
+	margin: 20px;
+	padding: 20px;
+	text-decoration: none;
+	color: blue;
+	background-color: white;
+	border-radius: 10px;
+	font-family: "Staatliches";
+}
+
+ul li a:hover {
+	background-color: blue;
+	color: white;
+
+}
