@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/*
+* Title: A website about Gaming
+* Author:  Jonejda Zaimi
+* Date:  15.03.2021
+*/
+
+/************************* General Styles ******************************/
+
+body {
+	margin: 0px;
+}
+
+
+nav img {
+	width:250px;
+	height:300px;
+	border-radius: 20px;
+
+}
+
+/* Navigation */
+nav {
+	display: flex;
+	justify-content: space-between; /* To make space between logo and list */
+ 	align-items: center;
+ 	padding: 20px;
+ 	background-image: url(background.jpg);
+	background-position: center;
+	background-size: cover;
+
+}
+
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style-type: none;	
+}
+
+nav ul li a{
+	text-decoration: none; /* Removes the underline decoration of a link*/
+	color: darkblue;
+	background-color: white;
+	border-radius: 10px;
+	margin: 20px;
+	padding: 20px;
+	font-family: "Indie Flower";
+	text-transform: uppercase; /*Shows the letters with all uppercase*/
+}
+
+/* Hover is used to make a nice effect if we put the mouse over the link*/
+ul li a:hover {
+	background-color: lightblue;
+	color: white;
+
+}
+/*Header*/
+header {
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+
+}
+
+header h1 {
+	font-size: 60px;
+	background-color: rgba(255, 255, 2555, 0.6);
+	padding: 20px;
+	border-radius: 10px;
+	font-family: "Indie Flower";
+}
+
+/* Main */
+main {
+	padding: 100px;
+	background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(133,141,246,1) 100%);
+}
+
+main h2{
+	color: black;
+}
+
+#margin {
+	background: radial-gradient(circle, rgba(98,68,121,1) 0%, rgba(36,152,121,1) 100%);
+}
+
+/*Footer*/
+footer {
+	height: 400px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-image: url(footer-background.jpg);
+	background-size: cover;
+	background-position: center;
+
+
+
+}
+
+footer p {
+	color: white;
+	font-size: 30px;
+	background-color: rgba(255, 255, 2555, 0.6);
+	padding: 20px;
+	border-radius: 10px;
+	font-family: "Indie Flower";
+
+	
+}
+
+/*Section*/
+section {
+	padding: 50px;
+	background-color: black;
+	color:  white;
+	font-family: "Indie Flower";
+
+}
+
+/**************************Page Styles***************************/
+
+/* Home Page */
+#home header {
+		background-image: url(header-background.jpg);
+}
+
+
+/* About Page */
+#about header {
+	background-image: url(header-background-about.jpg);
+}
+
+#about main {
+	background-color: skyblue;
+}
+
+/* Games Page */
+#games header {
+	background-image: url(games-background-header.jpg);
+}
+
+#games main {
+	background-color: blueviolet;
+}
+
+#launch header {
+	background-image: url(header-background-launch.jpg);
+}
