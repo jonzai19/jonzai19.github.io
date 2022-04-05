@@ -1,0 +1,77 @@
+:root {
+	scroll-behavior: smooth;
+}
+
+
+body{
+	margin: 0px;
+}
+nav {
+	background-image: url(mountains.jpg);
+	background-position: center;
+	background-size: cover;
+	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	padding: 40px;
+ 	position: fixed;
+ 	width: 100%;
+ 	box-sizing: border-box;
+ }
+
+nav img{
+	border-radius: 25px;
+	height: 200px;
+ 	width: 120px;
+
+}
+
+
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style-type: none;
+}
+
+
+nav ul li a {
+	padding: 20px;
+	margin: 20px;
+	text-decoration: none;
+	color: blue;
+	background-color: white;
+	border-radius: 10px;
+}
+
+nav ul li a:hover {
+	background-color: lightskyblue;
+	color: darkgray;
+
+} 
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("header.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 400px;
+}
+
+section {
+	padding: 100px;
+}
+
+#link1 {
+	background-color: blue;
+}
+
+#link2 {
+	background-color: lightskyblue;
+}
+
+#link3 {
+	background-color: deepskyblue;
+}
