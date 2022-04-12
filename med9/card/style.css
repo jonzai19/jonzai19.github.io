@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+	margin: 0px;
+	background-color: rgba(255, 100, 71, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: "Open Sans";
+}
+
+article .image {
+	height: 300px;
+	width: 320px;
+	background-image: url("flower.jpg");
+	background-position: center;
+	background-size: cover;
+	padding: 25px;
+}
+
+article {
+	position: relative;
+}
+
+article .text {
+	height: 220px;
+	width: 320px;
+	background-color: white;
+	padding: 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-direction: column;
+}
+
+article .box {
+	background-color: forestgreen;
+	color: white;
+	font-size: 13px;
+	padding: 10px;
+	position: absolute;
+	top: 312px;
+	left: 0px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+}
+
+article .text header {
+		font-size: 13px;
+}
+
+article .text footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 13px;
+	color: darkgrey;
+}
+
+header span {
+	margin-right: 6px;
+}
+
