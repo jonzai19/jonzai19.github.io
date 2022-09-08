@@ -1,0 +1,40 @@
+body {
+	margin: 0px;
+	background-color: darkgray;
+	font-family: calibri, sans-serif;
+	font-size: 15px;
+}
+
+nav {
+	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	background-color: lightgray;
+}
+
+nav img {
+	height: 160px;
+}
+
+ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style-type: none;
+	text-transform: uppercase;
+}
+
+
+ul li a {
+	text-decoration: none;
+	color: white;
+	background-color: lightcoral;
+	border-radius: 50px;
+	margin: 20px;
+	padding: 20px;
+}
+
+ul li a:hover {
+	background-color: darkgray;
+	color: white;
+}
