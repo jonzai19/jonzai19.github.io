@@ -1,0 +1,71 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Responsive Footer</title>
+		<style>
+			footer {
+				background: rgb(35,221,222);
+				background: linear-gradient(90deg, rgba(35,221,222,1) 0%, rgba(0,35,255,1) 100%);
+				color: white;
+				padding: 40px;
+				margin: 0;
+				text-align: center;
+			}
+			footer div p a {
+				color: white;
+			}
+
+			footer div h1 {
+				font-size: 30px;
+			}
+
+			footer div p a:hover{
+				background-color: white;
+				color:  skyblue;
+			}
+			@media (min-width: 768px) {
+				footer {
+				background: rgb(35,221,222);
+				background: linear-gradient(90deg, rgba(35,221,222,1) 0%, rgba(0,35,255,1) 100%);
+				color: white;
+				display: flex;
+				justify-content: center;
+				align-items: stretch;
+
+				}
+				footer div{
+				width: 25%;;
+				text-align: left;
+
+				}
+				footer div:last-child {
+					width: 50%;
+				}
+
+			}
+			
+		</style>
+	</head>
+	<body>
+		<footer>
+			<div>
+				<h1>About</h1>
+				<p><a href=".">Link 1</a></p>
+				<p><a href=".">Link 2</a></p>
+				<p><a href=".">Link 3</a></p>
+			</div>
+			<div>
+				<h1>Services</h1>
+				<p><a href=".">Link 1</a></p>
+				<p><a href=".">Link 2</a></p>
+				<p><a href=".">Link 3</a></p>
+			</div>
+			<div>
+				<h1>Our Company</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor, ligula non vehicula efficitur, odio justo tincidunt leo, sed sodales nunc dui ut est. Sed non arcu ac arcu varius gravida. Etiam eleifend eros leo. Sed luctus at augue iaculis mollis. Mauris commodo, lectus non mollis vehicula, lacus ipsum tempus odio, ut pellentesque lectus mi blandit purus. Fusce ipsum orci, imperdiet at nisl nec, auctor malesuada massa. Donec tincidunt velit vulputate diam cursus faucibus. In varius dictum justo nec finibus. Mauris massa metus, feugiat at erat eget, porttitor convallis massa. Nullam quis faucibus felis.</p>
+			</div>
+		</footer>
+	</body>
+	</html>
