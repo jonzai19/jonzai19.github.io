@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    background-image: url(kaffeeplatz.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .container1 p {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Signika Negative';
+  }
+  .container1 {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header {
+    margin: 0px;
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+    background: rgb(173, 113, 67);
+    background: linear-gradient(90deg,rgba(173, 113, 67, 0.5) 0%,rgba(173, 113, 67, 0.5) 85%);
+    height: 150px;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  header ul li {
+    margin: 10px;
+  }
+
+  header ul li a {
+    text-decoration: none;
+    border-radius: 10px;
+    background: rgb(209, 126, 93);
+    background: radial-gradient(circle, rgba(209, 126, 93, 0.82) 0%, rgba(162, 101, 77, 0.8155637254901961) 64%);
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    font-family: 'Signika Negative';
+  }
+
+  header ul li a:hover {
+    background-color: white;
+    color: brown;
+  }
+
+  header img:hover {
+    animation-play-state: paused;
+  }
+
+  header img {
+    height: 90px;
+    width: 90px;
+    border-radius: 30px;
+    margin: 10px;
+    object-fit: cover;
+    animation: wiggle 0.5s infinite;
+
+  }
+
+  footer {
+    grid-column: 1;
+    background: rgb(173, 113, 67);
+    background: linear-gradient(90deg, rgba(173, 113, 67, 0.5) 0%,rgba(173, 113, 67, 0.5) 85%);
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Signika Negative';
+  }
+
+  nav {
+    grid-row: 2;
+  }
+
+  main {
+    grid-column: 1;
+    grid-row: 3;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle,rgba(255, 255, 255, 0.3) 0%,rgba(255, 255, 255, 0.3) 100%);
+    display: flex;
+    flex-direction: column;
+  }
+
+  #projektmain h1, #projektmain p {
+    background: rgb(209, 126, 93);
+    background: radial-gradient( circle,rgba(209, 126, 93, 0.82) 0%,rgba(162, 101, 77, 0.8155637254901961) 64%);
+    color: white;
+    text-align: center;
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Signika Negative';
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #funktionenmain img {
+    width: 100%;
+    height: auto;
+  }
+
+  aside {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  aside h1, nav h1 {
+    background: rgb(209, 126, 93);
+    background: radial-gradient( circle,rgba(209, 126, 93, 0.82) 0%,rgba(162, 101, 77, 0.8155637254901961) 64% );
+    color: white;
+    text-align: center;
+    width: 150px;
+    height: 45px;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Signika Negative';
+  }
+
+  #statistikmain img {
+    width: 70%;
+    height: auto;
+  }
+
+   #funktionenmain img {
+    width: 50%;
+    height: 300px;
+  }
+
+   #trigonometriemain img {
+    width: 70%;
+    height: auto;
+  }
+
+  @keyframes wiggle {
+    0% {
+      transform: rotateZ(0);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    75% {
+      transform: rotateZ(10deg);
+    }
+    100% {
+      transform: rotateZ(0);
+    }
+  }
+
+  footer {
+  	padding: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+
+body {
+		margin: 0px;
+		background-image: url(kaffeeplatz.png);
+		background-position: center;
+		background-size: cover;
+	}
+
+.container {
+		min-height: 100vh;
+		min-width: 100vw;
+		display: grid;
+		grid-template-columns: 20vw 1fr 20vw;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+
+.container1{
+	display: flex;
+	align-items: center;
+  flex-direction: row;
+}
+.container1, .zweikinder {
+    display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.container1 p{
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-family: Signika Negative;
+
+}
+
+header {
+		width: 100%;
+		height: ;
+		grid-column: 1/4;
+		grid-row: 1/2;
+		background: rgb(173,113,67);
+		background: linear-gradient(90deg, rgba(173,113,67,0.5) 0%, rgba(173,113,67,0.5) 85%);
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+header ul{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		list-style-type: none;
+		line-height: 2;
+	}
+
+header ul li a{
+		margin: 10px;
+		padding: 5px;
+		text-decoration: none;
+		text-align: center;
+		border-radius: 10px;
+		background: rgb(209,126,93);
+		background: radial-gradient(circle, rgba(209,126,93,0.82) 0%, rgba(162,101,77,0.8155637254901961) 64%);
+		color: white;
+		font-size: 15px;
+		width: 120px;
+		display: block;
+		font-family: Signika Negative;
+	}
+
+header ul li a:hover {
+	background-color: white;
+	color: brown;
+	font-family: Signika Negative;
+
+}
+header img:hover {
+	animation-play-state: paused;
+}
+header img {
+  height: 150px;
+  width: 150px;
+  border-radius: 30px;
+  margin: 30px;
+  object-fit: cover;
+  animation: wiggle 0.5s infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotateZ(0);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  75% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+footer {
+		grid-column:1/4 ;
+		background: rgb(173,113,67);
+		background: linear-gradient(90deg, rgba(173,113,67,0.5) 0%, rgba(173,113,67,0.5) 85%);
+		color: white;
+		font-size: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: Signika Negative;;
+	}
+
+nav {
+		grid-row: 2/4;
+	}
+
+main {
+		grid-column: 2/3;
+		grid-row: 2/4;
+		background: rgb(255,255,255);
+		background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.3) 100%);
+	}
+
+
+#projektmain h1 {
+	background: rgb(209,126,93);
+	background: radial-gradient(circle, rgba(209,126,93,0.82) 0%, rgba(162,101,77,0.8155637254901961) 64%);
+	color: white;
+	text-align: center;
+	width: 350px;
+	height: 150px;
+	border-radius: 15px;
+	padding: 15px;
+	margin: 20px;
+	font-weight: bold;
+	font-size: 40px;
+	font-family: Signika Negative;
+	}
+
+#projektmain p {
+	background: rgb(209,126,93);
+	background: radial-gradient(circle, rgba(209,126,93,0.82) 0%, rgba(162,101,77,0.8155637254901961) 64%);
+	color: white;
+	text-align: center;
+	width: 350px;
+	height: 250px;
+	border-radius: 15px;
+	padding: 15px;
+	margin: 20px;
+	font-weight: bold;
+	font-size: 40px;
+	font-family: Signika Negative;
+	}
+
+main {
+	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+}
+ #funktionenmain img {
+ 	width: 50%;
+ 	height: 80%;
+ }
+
+ aside {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: flex-start;
+ }
+  nav {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: flex-start;
+ }
+aside h1 {
+	background: rgb(209,126,93);
+	background: radial-gradient(circle, rgba(209,126,93,0.82) 0%, rgba(162,101,77,0.8155637254901961) 64%);
+	color: white;
+	text-align: center;
+	width: 200px;
+	height: 60px;
+	border-radius: 15px;
+	padding: 15px;
+	font-weight: bold;
+	font-size: 28px;
+	font-family: Signika Negative;
+	}
+nav h1 {
+	background: rgb(209,126,93);
+	background: radial-gradient(circle, rgba(209,126,93,0.82) 0%, rgba(162,101,77,0.8155637254901961) 64%);
+	color: white;
+	text-align: center;
+	width: 200px;
+	height: 60px;
+	border-radius: 15px;
+	padding: 15px;
+	font-weight: bold;
+	font-size: 28px;
+	font-family: Signika Negative;
+	}
+
+	#statistikmain img {
+		width:  600px;
+	}
+}
