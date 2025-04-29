@@ -1,0 +1,383 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueTravel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(house.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            -webkit-box-sizing: border-box; 
+            -moz-box-sizing: border-box;    
+            box-sizing: border-box;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+            height: 18vh;
+            text-align: center;
+            background-color: #fdfcf8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100vw;
+        }
+        header nav {
+            margin-left: auto;
+        }
+
+        header img{
+            height: 125px;
+            width: 160px;
+            padding: 40px; 
+            margin: 50px;       
+        }
+        header a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #fff;
+        }
+
+       header nav a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 15px;
+            transition: font-size 0.3s ease;
+            background-color: white;
+            padding: 13px;  
+            border-radius: 20px;
+            background-color: lightblue;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #fdfcf8;
+            color: lightblue;
+            padding: 20px;
+            -webkit-box-sizing: border-box; 
+            -moz-box-sizing: border-box;    
+            box-sizing: border-box;
+            margin: 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            height: 10vh;
+            width: 100vw;
+        }
+
+        footer p{
+            color: lightblue;
+            text-shadow: none;
+            background: none;
+        }
+        .content {
+            padding: 60px;
+            height: calc(50vh - 120px);
+            width: 100vw;
+            height: 100vh;
+            color: white;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        div {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box; 
+            -moz-box-sizing: border-box;    
+            box-sizing: border-box;
+        }
+
+        .nav {
+            border-radius: 10%;
+            overflow: hidden;
+            height: 90%;
+            width: 90%;
+            margin: auto;
+        }
+        .nav h1{
+            margin: 0;
+            text-align: center;
+            padding: 0;
+            height: 25%;
+            width: 100%;
+            color: white;
+            font-size: 16px;
+            background: lightblue;
+            padding: 15px 0;
+            -webkit-box-sizing: border-box; 
+            -moz-box-sizing: border-box;    
+            box-sizing: border-box;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .img {
+            width: 100%;
+            height: 75%;
+            background-size:cover;
+            background-repeat:   no-repeat;
+            background-position: center center;
+        }
+        #i1 {
+            background-image: url("cleaning.jpeg");
+        }
+        #i2 {
+            background-image: url("repair.jpg");
+        }
+        #i3 {
+            background-image: url("gardening.jpg");
+        }
+        #i4 {
+            background-image: url("security.jpg");
+        }
+        #i5 {
+            background-image: url("IT.jpg");
+        }
+        #i6 {
+            background-image: url("transportation.jpg");
+        }
+        .info {
+            display: none;
+        }
+        .nav:hover .img {
+            display: none;
+        }
+        .nav:hover .info {
+            display: block;
+            height: 75%;
+            width: 100%;
+            background-color: #E1E0DE;
+            opacity: 80%;
+            margin: 0;
+            color: rgb(0,105,112);
+            padding-top: 10px;
+            font-weight: bold;
+            font-size: 12px; /* Adjust font size for better fitting */
+            box-sizing: border-box;
+            overflow-y: auto; /* Enable scrolling if necessary */
+            text-align: left; /* Left-align the text */
+            word-wrap: break-word; /* Break long words to fit the container */
+        }
+
+        .nav:hover .info li {
+            padding: 4px;
+        }
+        
+
+        header nav a:hover {
+            font-size: 18px;
+        }
+        h1{
+            margin-bottom: 0px;
+            text-align: center;
+            color: white;
+            font-size: 60px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            margin: 0px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+        }
+        .book a{
+            text-decoration: none;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 20px;
+            transition: font-size 0.3s ease;
+            padding: 13px;  
+            border-radius: 20px;
+            background-color: lightblue;
+            font-weight: bold;
+            font-family: "Montserrat";
+        }
+
+        .book a:hover {
+            font-size: 25px;
+            font-family: "Montserrat";
+        }
+        .book{
+            padding: 60px;
+    
+            margin-left: auto;
+            margin-right: auto;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+        }
+        @media only screen and (max-width: 768px) {
+            header {
+                height: 15vh;
+                width: 100vw;
+            }
+            header img {
+                height: 100px;
+                width: 175px;
+                padding: 16px; 
+                margin: 20px;
+            }
+            header nav {
+                height: 100%;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+            header nav a {
+                height: 15%;
+                width: 100%;
+                font-size: 10px;
+                margin: 0;
+                padding: 3px;
+            }
+            header nav a:hover {
+                font-size: 10px;
+            }
+            .content {
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+            }
+            .nav h1 {
+                font-size: 15px;
+            }
+            .nav .info li {
+                font-size: 10px;
+                margin: 0;
+                padding: 0;
+            }
+            .nav:hover .info {
+                padding: 10;
+            }
+            .book{
+            margin-left: auto;
+            margin-right: auto;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+        }
+            .nav {
+                width: 90%;
+            }
+            .nav h1 {
+                white-space: initial;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="bluetravellogo.jpg">
+        <nav>
+            <a href="aboutus.html">About Us</a>
+            <a href="home.html">Home</a>
+        </nav>
+    </header>
+
+        <h1>Paketat tona:</h1>
+        <p>..Eksploroni pa limit..</p>
+        <nav class="book"><a href="booking.html">Rezervoni!</a></nav>
+    <div class="content">
+
+    
+
+        <div class="nav">
+            <h1>Eksplorimi i Bregdetit Shqiptar</h1>
+            <ul class="info">
+                <li>Destinacionet: Durres, Vlore, Ksamil</li>
+                <li>Aktivitete: Plazh, ekskursione në qytetet historike, shëtitje me varkë</li>
+                <li>Shërbime: Transport, akomodim në hotele bregdetare, guida turistike</li>
+                <li>Çmimi: 5 ditë, 4 netë – 250€ për person</li>
+                <li>Udhëtim relaksues për ata që duan të shijojnë plazhet më të bukura të Shqipërisë. Pjesëmarrësit do të kenë mundësinë të vizitojnë qytetet bregdetare dhe të shijojnë aktivitete të ndryshme si snorkelling dhe shëtitje në mjedise të bukura.</li>
+            </ul>    
+            <div class="img" id="i1"></div>
+        </div>
+
+        <div class="nav">
+            <h1>Udhëtim Kulturor në Tiranë dhe Dajti</h1>
+            <ul class="info">
+                <li>Destinacionet: Tiranë, Mali i Dajti</li>
+                <li>Aktivitete: Vizita në muze, shëtitje në mal, ngjitje me teleferik në Dajti</li>
+                <li>Shërbime: Transport, guida, akomodim në hotele 4-yje në Tiranë, ushqim</li>
+                <li>Çmimi: 3 ditë, 2 netë – 180€ për person</li>
+                <li>Udhëtim ideal për ata që duan të eksplorojnë kulturën dhe historinë e Tiranës dhe të kalojnë disa ditë në natyrë. Do të vizitoni Muzeun Historik Kombëtar dhe shëtitjet në malet e Dajti.</li>
+            </ul>    
+            <div class="img" id="i2"></div>
+        </div>
+
+        <div class="nav">
+            <h1>Aventurë në Malet e Shqipërisë</h1>
+            <ul class="info">
+                <li>Destinacionet: Theth, Valbonë</li>
+                <li>Aktivitete: Shëtitje në natyrë, vizita në ujëvara dhe lugina</li>
+                <li>Shërbime: Transport, guida, akomodim në shtëpi tradicionale, ushqim tradicional</li>
+                <li>Çmimi: 6 ditë, 5 netë – 350€ për person</li>
+                <li>Ky udhëtim është për ata që kërkojnë aventura në natyrë. Pjesëmarrësit do të kenë mundësinë të shijojnë peizazhe mahnitëse dhe të bëjnë shëtitje në Alpet Shqiptare, duke u njohur me jetesën e banorëve të zonës.</li>
+            </ul>    
+            <div class="img" id="i3"></div>
+        </div>
+
+    
+
+        <div class="nav">
+            <h1>Aventurë e Historisë dhe Arkeologjisë në Shqipëri</h1>
+            <ul class="info">
+                <li>Destinacionet: Butrint, Apollonia, Fier</li>
+                <li>Aktivitete: Vizita në sitet arkeologjike të Butrintit dhe Apollonisë, muze dhe ekskursione arkeologjike</li>
+                <li>Shërbime: Transport, guida e specializuar, akomodim në hotele, ushqim tradicional</li>
+                <li>Çmimi: 5 ditë, 4 netë – 300€ për person</li>
+                <li>Udhëtim perfekt për ata që janë të apasionuar pas historisë dhe arkeologjisë. Vizitorët do të kenë mundësinë të eksplorojnë qytetet antike të Shqipërisë, përfshirë Butrintin, një nga sitet më të rëndësishme të trashëgimisë botërore, dhe Apolloninë me një kalendar arkeologjik të pasur.</li>
+
+            </ul>    
+            <div class="img" id="i4"></div>
+        </div>
+
+        <div class="nav">
+            <h1>Magjia e Liqeneve të Shqipërisë</h1>
+            <ul class="info">
+                <li>Destinacionet: Liqeni i Shkoders, Liqeni i Pogradec, Liqeni i Prespës</li>
+                <li>Aktivitete: Shëtitje me varkë në liqen, peshkim, ekskursione në natyrë, vizita në fshatra dhe kështjella</li>
+                <li>Shërbime: Transport, akomodim pranë liqeneve, guida lokale, ushqim tradicional</li>
+                <li>Çmimi: 4 ditë, 3 netë – 220€ për person</li>
+                <li>Ideal për dashamirësit e natyrës dhe ata që kërkojnë relaks në ambientet natyrore të Shqipërisë. Pjesëmarrësit do të shijojnë panoramën e liqeneve të bukura të Shqipërisë, mundësinë për të bërë shëtitje me varkë, peshkim dhe të eksplorojnë fshatrat përreth që ruajnë traditat dhe zakonet e lashta.</li>
+            </ul>    
+            <div class="img" id="i5"></div>
+        </div>
+
+        <div class="nav">
+            <h1>Udhëtim Gastronomik në Shqipëri</h1>
+            <ul class="info">
+                <li>Destinacionet: Tiranë, Vlorë, Gjirokastër</li>
+                <li>Aktivitete: Kurse gatimi tradicionale, vizita në tregjet lokale, shijim i ushqimeve të tipike shqiptare (si byrek, tave kosi, qofte, rakia, etj.)</li>
+                <li>Shërbime: Transport, akomodim, guida, aktivitete gastronomike</li>
+                <li>Çmimi: 5 ditë, 4 netë – 300€ për person</li>
+                <li>Ky udhëtim është për adhuruesit e ushqimit dhe ata që duan të zbulojnë sekretet e kuzhinës tradicionale shqiptare. Pjesëmarrësit do të marrin pjesë në kurse gatimi, ku do të mësojnë përgatitjen e disa gatimeve tradicionale dhe mund të shijojnë ushqime autentike nga çdo rajon i Shqipërisë. Do të ketë gjithashtu mundësi për të vizituar tregjet dhe për të mësuar më shumë rreth produkteve lokale.</li>
+            </ul>    
+            <div class="img" id="i6"></div>
+        </div>
+
+
+</div>
+
+    <footer>
+        <p>&copy; 2024 OMNIFIXX. All rights reserved.</p>
+    </footer>
+</body>
+</html>

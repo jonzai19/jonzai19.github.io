@@ -1,0 +1,277 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueTravel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(house.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            -webkit-box-sizing: border-box; 
+            -moz-box-sizing: border-box;    
+            box-sizing: border-box;
+            color: #fff;
+            padding: 40px;
+            margin: 0;
+            height: 18vh;
+            text-align: center;
+            background-color: #fdfcf8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100vw;
+        }
+        footer {
+            background-color: #fdfcf8;
+            color: lightblue;
+            padding: 20px;
+            -webkit-box-sizing: border-box; 
+            -moz-box-sizing: border-box;    
+            box-sizing: border-box;
+            margin: 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            height: 10vh;
+            width: 100vw;
+        }
+        .upcontent{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-bottom: 30px;
+        }
+        .upcontent p {
+            margin-top: 0px;
+            margin-left: 400px;
+            margin-right: 400px;
+            color: white;
+            font-size: 25px;
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+        }
+        .upcontent h1{
+            font-size: 60px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+        }
+        .content {
+            padding: 10px;
+            display: grid;
+            height: 65vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+        header nav {
+            margin-left: auto;
+        }
+
+        header img{
+            height: 125px;
+            width: 160px;
+            padding: 40px; 
+            margin: 50px;       
+        }
+        header nav a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 15px;
+            transition: font-size 0.3s ease;
+			padding: 13px;  
+            border-radius: 20px;
+            background: lightblue;
+            font-weight: bold;
+        }
+        div {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box; 
+            -moz-box-sizing: border-box;    
+            box-sizing: border-box;
+        }
+        .nav {
+            border-radius: 10%;
+            overflow: hidden;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 200px;
+            height: 150px;
+            margin: 20px;
+        }
+        .upcontent a {
+            background: lightblue;
+            color: white;
+            font-weight: bold;
+            margin: 0 10px;
+            margin-bottom: 0;
+            padding: 13px;  
+            border-radius: 30px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .link-container {
+            display: inline-block;
+            display: flex; 
+            justify-content: center;
+            padding: 5px 10px;
+            transition: transform 0.3s ease;
+            }
+
+        .fronttext {
+            text-align: center;
+            color: white;
+        }
+        .text {
+            text-align: center;
+            color: white;
+        }
+    
+        .nav .img1{
+            height: 46px;
+            width: 105px;
+            margin-bottom: 20px;
+        }
+        .nav .img2 {
+            height: 26px;
+            width: 105px;
+            margin: 10px;
+        }
+        .nav .img3{
+            height: 35px;
+            width: 100px;
+            margin: 10px;
+        }
+        .nav p{
+            margin: 0px;
+        }
+        @keyframes bounce {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-10px); }
+        }
+
+        .nav:hover {
+            animation: bounce 0.5s ease infinite;
+        }
+
+        .link-container:hover {
+            transform: scale(1.1);
+        }
+
+        header nav a:hover {
+            font-size: 18px;
+        }
+        @media only screen and (max-width: 768px) {
+            header {
+                height: 15vh;
+                width: 100vw;
+            }
+            header img {
+                height: 100px;
+                width: 175px;
+                padding: 16px; 
+                margin: 20px;
+            }
+            header nav {
+                height: 100%;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+            header nav a {
+                height: 15%;
+                width: 100%;
+                font-size: 10px;
+                margin: 0;
+                padding: 3px;
+            }
+            header nav a:hover {
+                font-size: 10px;
+            }
+            body {
+                width: 100vw;
+            }
+            .upcontent {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .upcontent h1 {
+                font-size: 30px;
+            }
+            .upcontent p {
+                width: 90vw;
+                font-size: 15px;
+                margin: 0;
+                margin-bottom: 20px;
+            }
+            .content .nav {
+                width: 30%;
+                margin: 0;
+                -webkit-box-sizing: border-box; 
+                -moz-box-sizing: border-box;
+            }
+            .content {
+                justify-content: space-around;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="bluetravellogo.jpg">
+        <nav>
+            <a href="aboutus.html">Rreth Nesh</a>
+            <a href="services.html">Paketat turistike</a>
+        </nav>
+    </header>
+    <div class="upcontent">
+    <h1 class="fronttext">Agjensi turistike, BlueTravel</h1>
+    <p class="text">Rezervoni nje eksperience unike, eksploroni vende, hotele dhe restorante me vleresimet me te mira ne mbare boten..</p>
+    </div>
+        <div class="content">
+        <div class="nav">
+            <img src="homestarslogo.jpg" class="img1">
+            <p>⭐ 9.7 rating</p>
+            <p>33 reviews</p>       
+        </div>
+        <div class="nav">
+            <img src="birdeyelogo.png" class="img2">
+            <p>⭐ 6.7 rating</p>
+            <p>42 reviews</p> 
+        </div>
+        <div class="nav">
+            <img src="googlelogo.png" class="img3">
+            <p>⭐ 4.0 rating</p>
+            <p>73 reviews</p> 
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 BlueTravel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
